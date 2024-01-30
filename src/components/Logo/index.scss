@@ -1,0 +1,20 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+
+    .logo-rafay {
+        opacity: 0;
+        animation: bounceIn 4s ease-in-out 1s forwards;
+
+        
+    }
+}
+
+
