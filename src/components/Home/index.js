@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
-import Logo from '../Logo';
+import Logo from '../Logo/index';
 const Home = ()=>{
     const [letterClass,setLetterClass] = useState('text-animate')
     const nameArray = ['R','a','f','a','y',',']
@@ -14,7 +14,7 @@ const Home = ()=>{
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover');
-        }, 4000);
+        }, 6000);
 
         return () => clearTimeout(timeoutId);
     }, []);
@@ -23,12 +23,12 @@ const Home = ()=>{
         <div className='container home-page'>
             <div className='text-zone'>
             <h1>
-            <AnimatedLetters strArray={startingArray} letterClass={letterClass} index={7} />
+            <AnimatedLetters strArray={startingArray} letterClass={letterClass} index={10} />
             <br/>
             <AnimatedLetters strArray={pronounArray} letterClass={letterClass} index={15} />
-             <AnimatedLetters strArray={nameArray} letterClass={letterClass} index={25}/>
+             <AnimatedLetters strArray={nameArray} letterClass={letterClass} index={22}/>
             <br/>
-            <AnimatedLetters strArray={workArray} letterClass={letterClass} index={33} />
+            <AnimatedLetters strArray={workArray} letterClass={letterClass} index={35} />
             </h1>
             <h2>MERN Stack Web Engineer / Javascript / Freelancer</h2>
             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
