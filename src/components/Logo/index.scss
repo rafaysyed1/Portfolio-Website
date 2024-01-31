@@ -1,7 +1,7 @@
 .logo-container {
     z-index: 0;
     width: 400px;
-    height: 600px;
+    height: 500px;
     position: absolute;
     top: 0;
     right: 15%;
@@ -10,11 +10,36 @@
     margin: auto;
 
     .logo-rafay {
+        border: 0 solid #181818;
         opacity: 0;
-        animation: bounceIn 4s ease-in-out 1s forwards;
-
-        
+        background-color: #ffd700;
+        border-radius: 5px;
+        animation: bounceIn 4s ease-in-out 1s forwards, borderAnim 4s ease-in-out 1s forwards;
     }
 }
 
+@keyframes borderAnim {
+    0% {
+        border-width: 0;
+        
+    }
 
+    25% {
+        border-width: 1px;
+        
+    }
+
+    50% {
+        border-width: 2px;
+        
+    }
+
+    75% {
+        border-width: 3px;
+        
+    }
+
+    100% {
+        border-width: 4px;
+           }
+}
