@@ -9,7 +9,7 @@ const Home = ()=>{
     const nameArray = ['R','a','f','a','y',',']
     const startingArray = ['H','e','l','l','o',',']
     const pronounArray = ['I','','a','m','']
-    const workArray = ['W','e','b',' ','E','n','g','i','n','e','e','r']
+    const workArray = ['W','e','b',' ','E','n','g','i','n','e','e','r','.']
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {

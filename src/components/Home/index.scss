@@ -8,7 +8,8 @@
     width: 40%;
     // min-height: 90%;
     h1{
-        color: #fff;
+      color: #ffd700;
+       
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
@@ -17,7 +18,7 @@
         &::before{
           content: '<h1>';
           font-family: 'La Belle Aurore';
-          color: #ffd700;
+          color: #fff;
           font-size: 22px;
           position: absolute;
           margin-top: -40px;
@@ -27,7 +28,7 @@
         &::after{
           content: '<h1/>';
           font-family: 'La Belle Aurore';
-          color: #ffd700;
+          color: #fff;
           font-size: 22px;
           position: absolute;
           margin-top: 30px;
@@ -50,16 +51,16 @@
       &::before{
         content: '<h2>';
         font-family: 'La Belle Aurore';
-        color: #ffd700;
+        color: #fff;
         font-size: 16px;
         position: absolute;
         left : 15px;
         opacity: 1;
       }
       &::after{
-        content: '<h2/>';
+        content: '</h2>';
         font-family: 'La Belle Aurore';
-        color: #ffd700;
+        color: #fff;
         font-size: 16px;
         position: absolute;
         animation: fadeIn 1s 1.7s backwards;
@@ -83,6 +84,7 @@
       white-space: nowrap;
 
       &:hover{
+        transition: 2s ease-out;
         background: #ffd700;
         color : #333;
       }

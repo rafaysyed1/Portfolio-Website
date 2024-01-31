@@ -4,11 +4,12 @@ import Logo from '../../assets/images/logo-rafay.png'
 import LogoSubtitle from '../../assets/images/logo-rafay-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faMedium, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => {
     const GITHUB_HANDLE = process.env.REACT_APP_GITHUB_HANDLE ;
     const LINKEDIN_HANDLE = process.env.REACT_APP_LINKEDIN_HANDLE;
     const WHATSAPP_NUMBER = process.env.REACT_APP_WHATSAPP_NUMBER;
+    const MEDIUM_HANDLE = process.env.REACT_APP_MEDIUM_HANDLE;
     return (
         <div className='nav-bar'>
             <Link className='logo' >
@@ -41,6 +42,11 @@ const Sidebar = () => {
                 <li>
                     <a target='_blank' rel='noreferrer' href={WHATSAPP_NUMBER}>
                         <FontAwesomeIcon icon = {faWhatsapp} color="#4d4d4e"/> 
+                    </a>
+                </li>
+                <li>
+                    <a target='_blank' rel='noreferrer' href={MEDIUM_HANDLE}>
+                        <FontAwesomeIcon icon = {faMedium} color="#4d4d4e"/> 
                     </a>
                 </li>
             </ul>
