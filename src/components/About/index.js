@@ -2,11 +2,12 @@ import { useState,useEffect } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGitAlt, faHtml5, faJsSquare, faNode, faReact } from '@fortawesome/free-brands-svg-icons'
+import Loader from 'react-loaders'
 
 const About = () => {
+    const [letterClass,setLetterClass] = useState('text-animate')
     const aboutMeArray = ['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']
-    const [letterClass, setLetterClass] = useState('text-animate');
     useEffect(() => {
  
         const timeoutId = setTimeout(() => {
@@ -21,7 +22,7 @@ const About = () => {
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
-                    <AnimatedLetters strArray={aboutMeArray} letterClass={letterClass} index={50} />
+                    <AnimatedLetters letterClass={letterClass} strArray={aboutMeArray} index={50} />
                 </h1>
                 <p>
                     Hello, I'm Rafay, a software engineering student in 3rd year.
@@ -39,13 +40,13 @@ const About = () => {
                    <FontAwesomeIcon icon={faReact} color='#DD0031' />
                    </div>
                    <div className='face2'>
-                   <FontAwesomeIcon icon={faNodeJs} color='#F06529' />
+                   <FontAwesomeIcon icon={faNode} color='#F06529' />
                    </div>
                    <div className='face3'>
                    <FontAwesomeIcon icon={faHtml5} color='#28A4D9' />
                    </div>
                    <div className='face4'>
-                   <FontAwesomeIcon icon={faJsSquare} color='#5ED4F4' />
+                   <FontAwesomeIcon icon={faJsSquare} color='#DDF700' />
                    </div>
                    <div className='face5'>
                    <FontAwesomeIcon icon={faCss3} color='#EFD81D' />
@@ -56,6 +57,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Loader type="pacman" className="loader-active" />
         </>
         
     )
