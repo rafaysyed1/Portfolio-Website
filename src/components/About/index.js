@@ -22,7 +22,7 @@ const About = () => {
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
-                    <AnimatedLetters letterClass={letterClass} strArray={aboutMeArray} index={50} />
+                    <AnimatedLetters letterClass={letterClass} strArray={aboutMeArray} index={15} />
                 </h1>
                 <p>
                     Hello, I'm Rafay, a software engineering student in 3rd year.
