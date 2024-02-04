@@ -40,8 +40,8 @@ const Contact = () => {
                                 </li>
                                 <li>
                                     <input
-                                        type="text"
                                         placeholder="Subject"
+                                        type="text"
                                         name="subject"
                                         required
                                     />
